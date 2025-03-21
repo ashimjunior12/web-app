@@ -26,22 +26,22 @@ const data = [
 
 const ChooseUs = () => {
   return (
-    <div className="flex flex-col items-center bg-[#090318] text-white py-20 px-4 lg:px-10">
-      <div className="w-full max-w-7xl">
-        <h1 className="text-2xl font-bold md:text-[60px] text-center mb-12">
+    <div className='flex flex-col items-center bg-[#090318] text-white py-20 px-4 lg:px-10'>
+      <div className='w-full max-w-7xl'>
+        <h1 className='text-2xl font-bold md:font-[600] md:text-[60px] text-center mb-12'>
           Why Choose Bycrafter?
         </h1>
 
-        <div className="flex flex-col lg:flex-row  gap-12 items-center">
-          <div className="flex-1">
-            <Timeline data={data} align="left" />
+        <div className='flex flex-col lg:flex-row  gap-12 items-center'>
+          <div className='flex-1'>
+            <Timeline data={data} align='left' />
           </div>
 
-          <div className="hidden lg:flex flex-1 items-center justify-center">
+          <div className='hidden lg:flex flex-1 items-center justify-center'>
             <img
               src={image}
-              alt="Features illustration"
-              className="max-w-full h-auto object-contain"
+              alt='Features illustration'
+              className='max-w-full h-auto object-contain'
             />
           </div>
         </div>

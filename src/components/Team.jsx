@@ -110,14 +110,14 @@ const Team = () => {
     //   </div>
     // </div>
     <div className='flex flex-col items-center bg-[#090318] text-white py-10 justify-center px-4 lg:px-10'>
-  <header className='w-full max-w-7xl mb-12'>
-    <h1 className='text-2xl font-bold md:text-[60px] md:text-center text-left'>
-      Meet the Team
-    </h1>
-    <p className='text-sm md:text-2xl text-left md:text-center mt-4'>
-      Our strength lies in the collective expertise of our dedicated team:
-    </p>
-  </header>
+      <header className='w-full max-w-7xl mb-12'>
+        <h1 className='text-2xl font-bold md:font-[600] md:text-[60px] md:text-center text-left'>
+          Meet the Team
+        </h1>
+        <p className='text-sm md:text-2xl text-left md:text-center mt-4'>
+          Our strength lies in the collective expertise of our dedicated team:
+        </p>
+      </header>
 
       <div className='w-full max-w-7xl'>
         <div className='flex flex-col  lg:flex-row-reverse gap-12 items-start'>

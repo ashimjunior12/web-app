@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className='flex flex-col justify-center items-center bg-[#0b0117] text-white lg:px-52 md:px-10  px-4 md:pt-10 pt-[50px]'>
       <header className='pt-10 mb-10'>
-        <h1 className='md:font-[500] md:text-5xl font-bold text-xl'>
+        <h1 className='md:font-[600] md:text-[60px] md:text-5xl font-bold text-xl'>
           Transform Your Digital Vision into Reality
         </h1>
         <p className='md:font-[400] md:text-lg lg:text-center leading-[35px] text-left text-sm mt-4'>
