@@ -12,7 +12,7 @@ const Philosopy = () => {
         <img src={image} alt='image' />
       </div>
       <div className='bottom-image'>
-        <img src={robot} alt='robot' width={722} height={722} />
+        <img src={robot} alt='robot' className='w-72 h-72' />
       </div>
       <p className='font-[400] text-2xl mb-2 md:text-[60px] text-white pt-5 '>
         Let’s Build the Future Together

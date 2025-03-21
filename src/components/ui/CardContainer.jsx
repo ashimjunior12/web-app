@@ -27,7 +27,7 @@ const CardContainer = () => {
   return (
     <div className='w-full content-center pb-10'>
       {/* First row - 3 columns */}
-      <div className='grid lg:grid-cols-3 gap-4 mt-5'>
+      <div className='grid lg:grid-cols-3 gap-4 mt-5 md:px-15'>
         {firstRowData.map((service, index) => (
           <Card
             key={`first-${index}`}
@@ -46,7 +46,7 @@ const CardContainer = () => {
 
       {/* Second row and onwards - 2 columns with centering */}
       {isSecondRow && (
-        <div className='grid lg:grid-cols-2 gap-4 mt-4 mx-auto lg:max-w-4xl'>
+        <div className='grid lg:grid-cols-2 gap-4 mt-4 mx-auto lg:max-w-4xl md:px-15'>
           {remainingData.map((service, index) => (
             <Card
               key={`second-${index}`}

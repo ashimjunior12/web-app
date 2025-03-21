@@ -21,7 +21,7 @@
                 {/* Dot Indicator */}
                 <div
                   className={`relative w-10 flex items-center ${
-                    align === 'right' ? 'justify-end' : 'justify-center'
+                    align === 'right' ? 'justify-end pr-3' : 'justify-center'
                   }`}
                 >
                   <div className='w-4 h-4 bg-white border-4 border-[#2d0c49] rounded-full'></div>

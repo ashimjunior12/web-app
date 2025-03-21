@@ -12,7 +12,7 @@ const Services = () => {
       </p>
       <CardContainer />
 
-      <p className="md:font-[400] md:text-[25px] mb-6 text-sm">
+      <p className="md:font-[400] md:text-[25px] mb-6 text-sm text-center">
         We pride ourselves on being problem solvers, capable of addressing any
         digital challenge a company might face, regardless of scale or
         complexity.

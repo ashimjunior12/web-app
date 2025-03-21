@@ -76,37 +76,72 @@ const Team = () => {
   ];
 
   return (
+    // <div className='flex flex-col items-center bg-[#090318] text-white py-10 justify-center px-4 lg:px-10'>
+    //   <header className='w-full max-w-7xl mb-12'>
+    //     <h1 className='text-2xl font-bold md:text-[60px] md:text-center text-left'>
+    //       Meet the Team
+    //     </h1>
+    //     <p className='text-sm md:text-2xl text-left md:text-center mt-4'>
+    //       Our strength lies in the collective expertise of our dedicated team:
+    //     </p>
+    //   </header>
+
+    //   <div className='w-full max-w-7xl'>
+    //     <div className='flex flex-col lg:flex-row gap-12 items-start'>
+    //       {/* Image on left */}
+    //       <div className='hidden lg:flex flex-1 items-center justify-center'>
+    //         <img
+    //           src={image}
+    //           alt='Team illustration'
+    //           className='max-w-full h-auto object-contain'
+    //         />
+    //       </div>
+
+    //       {/* Timeline on right */}
+    //       <div className='flex-1'>
+    //         <Timeline data={data} align='right' />
+    //       </div>
+    //     </div>
+
+    //     <p className='font-normal text-lg md:text-2xl mt-12 text-center'>
+    //       Together, we bring a harmonious blend of creativity, technical acumen,
+    //       and strategic thinking to every project we undertake.
+    //     </p>
+    //   </div>
+    // </div>
     <div className='flex flex-col items-center bg-[#090318] text-white py-10 justify-center px-4 lg:px-10'>
-      <header className='w-full max-w-7xl mb-12'>
-        <h1 className='text-2xl font-bold md:text-[60px] md:text-center text-left'>
-          Meet the Team
-        </h1>
-        <p className='text-sm md:text-2xl text-left md:text-center mt-4'>
-          Our strength lies in the collective expertise of our dedicated team:
-        </p>
-      </header>
+  <header className='w-full max-w-7xl mb-12'>
+    <h1 className='text-2xl font-bold md:text-[60px] md:text-center text-left'>
+      Meet the Team
+    </h1>
+    <p className='text-sm md:text-2xl text-left md:text-center mt-4'>
+      Our strength lies in the collective expertise of our dedicated team:
+    </p>
+  </header>
 
-      <div className='w-full max-w-7xl'>
-        <div className='flex flex-col lg:flex-row gap-12 items-start'>
-          <div className='flex-1'>
-            <Timeline data={data} align='right' />
-          </div>
+  <div className='w-full max-w-7xl'>
+    <div className='flex flex-col lg:flex-row lg:grid lg:grid-cols-2 gap-12 items-stretch'>
+      {/* Image on left - Equal ratio */}
+      <div className='hidden lg:flex h-full items-center justify-center'>
+        <img
+          src={image}
+          alt='Team illustration'
+          className='w-full h-full max-h-[600px] object-contain'
+        />
+      </div>
 
-          <div className='hidden lg:flex flex-1 items-center justify-center'>
-            <img
-              src={image}
-              alt='Team illustration'
-              className='max-w-full h-auto object-contain'
-            />
-          </div>
-        </div>
-
-        <p className='font-normal text-lg md:text-2xl mt-12 text-center'>
-          Together, we bring a harmonious blend of creativity, technical acumen,
-          and strategic thinking to every project we undertake.
-        </p>
+      {/* Timeline on right - Equal ratio */}
+      <div className='h-full flex-1'>
+        <Timeline data={data} align='right' />
       </div>
     </div>
+
+    <p className='font-normal text-lg md:text-2xl mt-12 text-center'>
+      Together, we bring a harmonious blend of creativity, technical acumen,
+      and strategic thinking to every project we undertake.
+    </p>
+  </div>
+</div>
   );
 };
 
