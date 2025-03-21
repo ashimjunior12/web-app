@@ -1,5 +1,5 @@
-import Timeline from '../components/ui/Timeline';
-import image from '../assets/images/Group 1.png'
+import Timeline from './ui/Timeline';
+import image from '../assets/images/Group 1.png';
 
 const data = [
   {
@@ -24,24 +24,30 @@ const data = [
   },
 ];
 
-
 const ChooseUs = () => {
   return (
-    <div className='flex flex-col items-center bg-[#090318] text-white md:px-10 pl-4 pt-15'>
-      <header>
-        <h1 className='w-[400] text-xl font-bold  md:text-[60px] md:text-center text-left'>
+    <div className='flex flex-col items-center bg-[#090318] text-white py-20 px-4 lg:px-10'>
+      <div className='w-full max-w-7xl'>
+        <h1 className='text-2xl font-bold md:text-[60px] text-center mb-12'>
           Why Choose Bycrafter?
         </h1>
-        <div className='flex'>
-          <Timeline data={data} />
-          <div className='image hidden lg:block'>
-            <img src={image} alt='image' />
+
+        <div className='flex flex-col lg:flex-row gap-12 items-start'>
+          <div className='flex-1'>
+            <Timeline data={data} align='left' />
           </div>
 
-         
+          <div className='hidden lg:flex flex-1 items-center justify-center'>
+            <img
+              src={image}
+              alt='Features illustration'
+              className='max-w-full h-auto object-contain'
+            />
+          </div>
         </div>
-      </header>
+      </div>
     </div>
   );
 };
+
 export default ChooseUs;
