@@ -58,12 +58,12 @@ const ContactForm = () => {
                   <label htmlFor="phone" className="block text-gray-600 text-sm mb-2">Phone Number</label>
                   <div className="flex">
                     <div className="w-16 bg-gray-50 border border-gray-200 rounded-l-lg flex items-center justify-center text-gray-600 text-sm">
-                      US
+                      NP
                     </div>
                     <input 
                       type="tel" 
                       id="phone" 
-                      placeholder="+1 (555) 1234586" 
+                      placeholder="+977 981234586" 
                       className="flex-1 p-3 border border-gray-200 rounded-r-lg focus:outline-none focus:ring-2 focus:ring-purple-500 border-l-0"
                     />
                   </div>
