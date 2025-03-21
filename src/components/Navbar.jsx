@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import logo from '../assets/images/Layer_1.png';
-import { menuItems, searchBar, socialMediaLinks } from '../data/data';
+import { menuItems, socialMediaLinks } from '../data/data';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,7 +28,7 @@ const Navbar = () => {
               {menuItems.map((menu) => (
                 <li key={menu.id} className='list-none uppercase'>
                   <a
-                    href={menu.link}
+                    href={`#${menu.link}`}
                     className='text-white hover:text-gray-300 text-sm lg:text-base'
                   >
                     {menu.name}
@@ -72,7 +72,7 @@ const Navbar = () => {
           <div className='hidden md:flex ml-2 items-center gap-4'>
             <ul className='flex gap-4'>
               {socialMediaLinks.map((item) => (
-                <li key={item.id} className='list-none flex items-center'>
+                <li key={item.id} className='list-none hover:scale-110 transition-transform ease-in-out duration-700 flex items-center'>
                   <a
                     href={item.link}
                     target='_blank'
@@ -84,16 +84,6 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
-            <div className='relative'>
-              <input
-                type='text'
-                placeholder={searchBar.placeholder}
-                className='pl-10 pr-3 py-1 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500 w-32 lg:w-auto'
-              />
-              <div className='absolute left-2 top-1/2 transform -translate-y-1/2 text-white'>
-                {searchBar.icon}
-              </div>
-            </div>
           </div>
         </div>
 
@@ -127,16 +117,7 @@ const Navbar = () => {
                   </li>
                 ))}
               </ul>
-              <div className='relative'>
-                <input
-                  type='text'
-                  placeholder={searchBar.placeholder}
-                  className='pl-10 pr-3 py-1 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500 w-40'
-                />
-                <div className='absolute left-2 top-1/2 transform -translate-y-1/2 text-white'>
-                  {searchBar.icon}
-                </div>
-              </div>
+              
             </div>
           </div>
         )}

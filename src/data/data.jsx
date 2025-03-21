@@ -6,11 +6,11 @@ import { AiOutlineSolution } from 'react-icons/ai';
 
 // Navigation Menu
 const menuItems = [
-  { id: 1, name: 'Home', link: '/' },
-  { id: 2, name: 'Services', link: '/services' },
-  { id: 3, name: 'Work', link: '/work' },
-  { id: 4, name: 'Blog', link: '/blog' },
-  { id: 5, name: 'Contact', link: '/contact' },
+  { id: 1, name: 'Home', link: '' },
+  { id: 2, name: 'Services', link: 'service' },
+  { id: 3, name: 'Work', link: 'work' },
+  { id: 4, name: 'Blog', link: 'blog' },
+  { id: 5, name: 'Contact', link: 'contact' },
 ];
 
 // Social Media Links

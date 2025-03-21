@@ -15,7 +15,8 @@ import Team from "./components/Team"
 const App = () => {
   
   return (
-    <div>
+    <div className=" bg-[#090319] justify-center flex flex-col">
+      {/* <div className="max-w-[1600px]"> */}
       <Navbar />
       <Hero />
       <About />
@@ -26,7 +27,7 @@ const App = () => {
       <Contact />
       <Blogs /> 
 <Footer />  
-
+{/* </div> */}
     </div>
   );
 }

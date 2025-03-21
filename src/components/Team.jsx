@@ -119,29 +119,27 @@ const Team = () => {
     </p>
   </header>
 
-  <div className='w-full max-w-7xl'>
-    <div className='flex flex-col lg:flex-row lg:grid lg:grid-cols-2 gap-12 items-stretch'>
-      {/* Image on left - Equal ratio */}
-      <div className='hidden lg:flex h-full items-center justify-center'>
-        <img
-          src={image}
-          alt='Team illustration'
-          className='w-full h-full max-h-[600px] object-contain'
-        />
-      </div>
+      <div className='w-full max-w-7xl'>
+        <div className='flex flex-col  lg:flex-row-reverse gap-12 items-start'>
+          <div className='flex-1'>
+            <Timeline data={data} align='left' />
+          </div>
 
-      {/* Timeline on right - Equal ratio */}
-      <div className='h-full flex-1'>
-        <Timeline data={data} align='right' />
+          <div className='hidden lg:flex flex-1 items-center justify-center'>
+            <img
+              src={image}
+              alt='Team illustration'
+              className='max-w-full h-auto object-contain'
+            />
+          </div>
+        </div>
+
+        <p className='font-normal text-lg md:text-xl mt-12 text-center'>
+          Together, we bring a harmonious blend of creativity, technical acumen,
+          and strategic thinking to every project we undertake.
+        </p>
       </div>
     </div>
-
-    <p className='font-normal text-lg md:text-2xl mt-12 text-center lg:px-40'>
-      Together, we bring a harmonious blend of creativity, technical acumen,
-      and strategic thinking to every project we undertake.
-    </p>
-  </div>
-</div>
   );
 };
 

@@ -4,13 +4,15 @@ import { socialMediaLinks } from "@/data/data";
 
 const Footer = () => {
   return (
-    <div className='bg-[#00000f] text-white border-t border-gray-700 flex flex-col  py-10 px-5 md:px-20'>
+    
+    <div className='flex flex-col items-center bg-[#00000f] border-t border-gray-700'>
+    <div className='bg-[#00000f] w-full max-w-6xl text-white px-6  flex flex-col  py-10 '>
       <h1 className='font-[700] text-[23.83px]'>Bycrafters</h1>
       <p className='font-[400] text-[16.95px] text-gray-500'>
         Boost your business: Contact Us
       </p>
 
-      <div className='bottom flex justify-between items-center mt-10  md:px-5 flex-col md:flex-row'>
+      <div className='bottom flex justify-between items-center mt-10   flex-col md:flex-row'>
         <p className='text-gray-500 md:text-md text-sm'>
           Made By <span className='text-white'>Bycrafter</span>. All rights
           reserved.
@@ -21,6 +23,7 @@ const Footer = () => {
           })}
         </div>
       </div>
+    </div>
     </div>
   );
 }

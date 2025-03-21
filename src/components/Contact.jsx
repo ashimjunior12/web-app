@@ -1,91 +1,100 @@
-import {
-  Card,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card';
-import { Button } from './ui/button';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Checkbox } from '@/components/ui/checkbox';
+import React from 'react';
 
-
-
-
-const Contact = () => {
+const ContactForm = () => {
   return (
-    <div className='flex flex-col items-center justify-center text-white bg-[#090318] py-15'>
-      <h1 className='font-[400] md:text-[60px] text-2xl mb-2'>Contact Us</h1>
-
-      <footer>
-        <div className='card-container'>
-          <Card className='border border-gray-800  flex items-center  justify-center bg-gradient-to-b from-[#080016] to-[#8d42ca]'>
-            <div className='content px-4 md:px-10 flex gap-10 flex-col lg:flex-row'>
-              <div className='left flex flex-col items center text-white justify-center'>
-                <p className=' text-sm md:text-[20px] font-[400]'>Get Started</p>
-                <h1 className='mt-5 font-[400] text-md md:text-[45px]'>
-                  Ready to Transform <br />
-                  Your Digital Presence?
-                </h1>
-                <p className='mt-5 font-[400] text-sm md:text-[20px]'>
-                  Your digital success is our passion. Let's connect and ignite
-                  your journey to unparalleled success
-                </p>
-                <Button className='mt-5 w-fit border-none rounded-2xl bg-white text-black cursor-pointer hover:bg-white'>
-                  Contact Us
-                </Button>
-              </div>
-              <div className='right'>
-                <Card className='px-4 md:p-10 border border-t-none rounded-t-none '>
-                  <form>
-                    <div className='section flex flex-col gap-3'>
-                      <Label className='font-[400] text-[17.5px] text-[#475569]'>
-                        Company
-                      </Label>
-                      <Input
-                        placeholder='Company Name...'
-                        className='placeholder:text-[17.5px] placeholder:font-[400]'
-                      />
+    <div className="  flex items-center flex-col justify-center p-4" id='contact'>
+      {/* Main container with gradient */}
+        <h1 className="text-white text-[40px]  font-semibold text-center pt-12 pb-8">Contact Us</h1>
+      <div className="w-full max-w-[1000px] mx-auto bg-gradient-to-b from-[#000]  to-[#6C2FA6] rounded-[32px] overflow-hidden relative">
+        {/* Dark curved overlay */}
+        {/* <div className="absolute inset-0 bg-[url('/curve-overlay.svg')] bg-no-repeat bg-cover opacity-50"></div> */}
+        
+        
+        <div className="flex flex-col max-md:gap-4 md:flex-row px-8 md:px-16 py-16  md:gap-24">
+          {/* Left Section */}
+          <div className="w-full md:w-1/2 max-md:flex max-md:flex-col max-md:text-center text-white self-center">
+            <p className="text-md mb-4 font-light">Get started</p>
+            
+            <h2 className="text-2xl md:text-4xl font-bold max-md:text-center leading-tight mb-4">
+              Ready to Transform
+              Your Digital Presence?
+            </h2>
+            
+            <p className="text-[17px] opacity-90 mb-4 max-md:text-center leading-relaxed">
+              Your digital success is our passion. Let's connect
+              and ignite your journey to unparalleled success
+            </p>
+            
+            <button className="bg-white max-md:text-center mx-auto text-[#0f0823] max-w-[200px]  rounded-full py-3 px-8 font-medium text-sm hover:bg-opacity-90 transition-all">
+              Contact Us
+            </button>
+          </div>
+          
+          {/* Right Section - Form */}
+          <div className="w-full md:w-1/2">
+            <div className="bg-white rounded-[20px] p-8 max-w-md mx-auto shadow-lg">
+              <form className="space-y-6">
+                <div>
+                  <label htmlFor="company" className="block text-gray-600 text-sm mb-2">Company</label>
+                  <input 
+                    type="text" 
+                    id="company" 
+                    placeholder="Company name..." 
+                    className="w-full p-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  />
+                </div>
+                
+                <div>
+                  <label htmlFor="email" className="block text-gray-600 text-sm mb-2">Email</label>
+                  <input 
+                    type="email" 
+                    id="email" 
+                    placeholder="Type your email..." 
+                    className="w-full p-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  />
+                </div>
+                
+                <div>
+                  <label htmlFor="phone" className="block text-gray-600 text-sm mb-2">Phone Number</label>
+                  <div className="flex">
+                    <div className="w-16 bg-gray-50 border border-gray-200 rounded-l-lg flex items-center justify-center text-gray-600 text-sm">
+                      US
                     </div>
-                    <div className='section flex flex-col gap-3 mt-8'>
-                      <Label className='font-[400] text-[17.5px] text-[#475569]'>
-                        Email
-                      </Label>
-                      <Input
-                        placeholder='Type your email...'
-                        className='placeholder:text-[17.5px] placeholder:font-[400]'
-                      />
-                    </div>
-                    <div className='section flex flex-col gap-3 mt-8'>
-                      <Label className='font-[400] text-[17.5px] text-[#475569]'>
-                        Phone Number
-                      </Label>
-                      <Input
-                        type=''
-                        placeholder='+1 (555) 1234586'
-                        className='placeholder:text-[17.5px] placeholder:font-[400]'
-                      />
-                    </div>
-
-                    <footer className='mt-10 flex'>
-                      <Checkbox className="cursor-pointer"/>
-                      <span className='ml-2 text-[17.5px]'>
-                        Creating an account means you’re okay with our <br />
-                        <span className='text-[#4400FF] cursor-pointer'>
-                          Terms of Service, Privacy Policy
-                        </span>
-                        , and our default
-                      </span>
-                    </footer>
-                      <Button className="w-full border rounded-3xl mt-6 cursor-pointer">Submit</Button>
-                  </form>
-                </Card>
-              </div>
+                    <input 
+                      type="tel" 
+                      id="phone" 
+                      placeholder="+1 (555) 1234586" 
+                      className="flex-1 p-3 border border-gray-200 rounded-r-lg focus:outline-none focus:ring-2 focus:ring-purple-500 border-l-0"
+                    />
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-2">
+                  <input 
+                    type="checkbox" 
+                    id="terms" 
+                    className="mt-1 h-4 w-4 text-purple-600 border-gray-300 rounded focus:ring-purple-500"
+                  />
+                  <label htmlFor="terms" className="text-xs text-gray-600">
+                    Creating an account means you're okay with our{' '}
+                    <a href="#" className="text-purple-600 hover:underline">Terms of Service</a>,{' '}
+                    <a href="#" className="text-purple-600 hover:underline">Privacy Policy</a>, and our default.
+                  </label>
+                </div>
+                
+                <button 
+                  type="submit" 
+                  className="w-full bg-black text-white p-3 rounded-lg hover:bg-gray-800 transition-colors font-medium text-sm"
+                >
+                  Submit
+                </button>
+              </form>
             </div>
-          </Card>
+          </div>
         </div>
-      </footer>
+      </div>
     </div>
   );
 };
-export default Contact;
+
+export default ContactForm;
