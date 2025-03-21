@@ -4,10 +4,10 @@ const About = () => {
   return (
     <div className='flex flex-col justify-center items-center bg-[#0b0117] text-white lg:px-52 md:px-10  px-4 md:pt-10 pt-[50px]'>
       <header className='pt-10 mb-10'>
-        <h1 className='md:font-[500] md:text-[60px] font-bold text-2xl'>
+        <h1 className='md:font-[500] md:text-5xl font-bold text-xl'>
           Transform Your Digital Vision into Reality
         </h1>
-        <p className='md:font-[400] md:text-[25px] lg:text-center leading-[35px] text-left text-sm mt-4'>
+        <p className='md:font-[400] md:text-lg lg:text-center leading-[35px] text-left text-sm mt-4'>
           Unleashing excellence, crafting quality, and nurturing success every
           step of the way.
         </p>
@@ -20,7 +20,7 @@ const About = () => {
               About Us
             </h1>
 
-            <p className='md:font-[400] text-sm md:text-[20px] leading-[30px] text-left pb-6 mt-6'>
+            <p className='md:font-medium text-sm md:text-md leading-[30px] text-left pb-6 '>
               Founded with a vision to simplify the digital transition for
               businesses, Bycrafters is committed to delivering excellence. We
               understand that every small business has unique challenges and

@@ -87,9 +87,9 @@ const Team = () => {
       </header>
 
       <div className='w-full max-w-7xl'>
-        <div className='flex flex-col lg:flex-row gap-12 items-start'>
+        <div className='flex flex-col  lg:flex-row-reverse gap-12 items-start'>
           <div className='flex-1'>
-            <Timeline data={data} align='right' />
+            <Timeline data={data} align='left' />
           </div>
 
           <div className='hidden lg:flex flex-1 items-center justify-center'>
@@ -101,7 +101,7 @@ const Team = () => {
           </div>
         </div>
 
-        <p className='font-normal text-lg md:text-2xl mt-12 text-center'>
+        <p className='font-normal text-lg md:text-xl mt-12 text-center'>
           Together, we bring a harmonious blend of creativity, technical acumen,
           and strategic thinking to every project we undertake.
         </p>
