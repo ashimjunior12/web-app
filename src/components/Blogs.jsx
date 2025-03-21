@@ -47,7 +47,7 @@ const Blogs = () => {
                 <CardTitle>
                   <h1 className="text-xl font-bold">{blog.title}</h1>
                 </CardTitle>
-                <CardDescription className="text-white text-center mt-2">
+                <CardDescription className="text-white text-justify mt-2">
                   {blog.description}
                 </CardDescription>
                 <Button className="border-white hover:bg-gray-300 cursor-pointer bg-white text-black w-fit rounded-2xl mt-4">
