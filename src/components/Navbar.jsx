@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className='flex justify-between items-center'>
           {/* Logo section */}
           <div className='flex items-center'>
-            <div className='logo flex items-center gap-2 lg:border-r-4 border-red-700 pr-2'>
+            <div className='logo flex items-center gap-2 pr-2'>
               <img src={logo} alt='Logo' className='h-10 md:h-14' />
               <div className='logo-text font-bold text-xl md:text-xl'>
                 <span className='text-[#d399f7]'>
