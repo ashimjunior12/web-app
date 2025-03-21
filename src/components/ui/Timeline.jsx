@@ -28,7 +28,7 @@
                 </div>
 
                 {/* Text Content */}
-                <div className={`flex-1 ${align === 'right' ? 'pr-10' : ''}`}>
+                <div className={`flex-1 ${align === 'right' ? 'pr-10 text-right' : ''}`}>
                   <h3 className='text-lg md:text-xl font-semibold text-white'>
                     {item.title}
                   </h3>

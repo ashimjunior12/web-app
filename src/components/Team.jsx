@@ -136,7 +136,7 @@ const Team = () => {
       </div>
     </div>
 
-    <p className='font-normal text-lg md:text-2xl mt-12 text-center'>
+    <p className='font-normal text-lg md:text-2xl mt-12 text-center lg:px-40'>
       Together, we bring a harmonious blend of creativity, technical acumen,
       and strategic thinking to every project we undertake.
     </p>

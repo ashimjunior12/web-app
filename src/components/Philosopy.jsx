@@ -18,7 +18,7 @@ const Philosopy = () => {
         Let’s Build the Future Together
       </p>
       <Card className='bg-[#7b2cbf] border-none'>
-        <CardDescription className='text-white px-5'>
+        <CardDescription className='text-white px-5 text-center'>
           Your digital success story begins with a conversation. Reach out to us
           today to explore how Inwebmedia can partner with you to turn your
           vision into reality. Whether you’re taking your first step online or

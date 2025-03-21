@@ -25,7 +25,7 @@ const CardContainer = () => {
   const remainingData = servicesData.slice(firstRowCards);
 
   return (
-    <div className='w-full content-center pb-10'>
+    <div className='w-full content-center pb-10 mt-10'>
       {/* First row - 3 columns */}
       <div className='grid lg:grid-cols-3 gap-4 mt-5 md:px-15'>
         {firstRowData.map((service, index) => (
@@ -35,8 +35,8 @@ const CardContainer = () => {
           >
             <CardHeader>
               <div className='icon flex justify-center text-3xl'>{service.icon}</div>
-              <CardTitle className='mt-10 mb-10'>{service.title}</CardTitle>
-              <CardDescription className='text-white'>
+              <CardTitle className='mt-10 mb-10 text-center'>{service.title}</CardTitle>
+              <CardDescription className='text-white text-center'>
                 {service.content}
               </CardDescription>
             </CardHeader>
@@ -54,8 +54,8 @@ const CardContainer = () => {
             >
               <CardHeader>
                 <div className='icon flex justify-center text-3xl'>{service.icon}</div>
-                <CardTitle className='mt-10 mb-10'>{service.title}</CardTitle>
-                <CardDescription className='text-white'>
+                <CardTitle className='mt-10 mb-10 text-center'>{service.title}</CardTitle>
+                <CardDescription className='text-white text-center'>
                   {service.content}
                 </CardDescription>
               </CardHeader>
