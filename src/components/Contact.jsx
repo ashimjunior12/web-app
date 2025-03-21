@@ -79,11 +79,11 @@ const ContactForm = () => {
                       NP
                     </div>
                     <input
-                      type="tel"
-                      id="phone"
-                      placeholder="+977 981234586"
-                      className="flex-1 p-3 border border-gray-600 rounded-r-lg focus:outline-none focus:ring-2 focus:ring-purple-500 border-l-0"
-                    />
+                    type="tel"
+                    id="phone"
+                    placeholder="+977 981234586"
+                    className="w-full p-3 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  />
                   </div>
                 </div>
 
